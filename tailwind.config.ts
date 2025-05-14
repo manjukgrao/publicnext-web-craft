@@ -64,7 +64,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				publicnext: {
-					blue: "#1A2653",
+					blue: "#1ab99a",
 					purple: "#5B4CFF", 
 					lightpurple: "#8B7DFF",
 					darkblue: "#121A3A",
