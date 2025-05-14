@@ -48,6 +48,9 @@ const Navbar = () => {
           <a href="#services" className="text-publicnext-blue hover:text-publicnext-purple transition-colors font-medium">
             Services
           </a>
+          <a href="#work" className="text-publicnext-blue hover:text-publicnext-purple transition-colors font-medium">
+            Work
+          </a>
           <Button className="bg-publicnext-purple hover:bg-publicnext-lightpurple text-white">
             Contact Us
           </Button>
@@ -88,6 +91,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Services
+            </a>
+            <a 
+              href="#work" 
+              className="text-publicnext-blue hover:text-publicnext-purple transition-colors px-4 py-2"
+              onClick={toggleMenu}
+            >
+              Work
             </a>
             <div className="px-4 pt-2">
               <Button className="w-full bg-publicnext-purple hover:bg-publicnext-lightpurple text-white">
