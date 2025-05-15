@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Circle } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,6 +33,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="text-2xl font-bold text-publicnext-blue flex items-center">
+            <Circle className="h-8 w-8 mr-2 text-publicnext-purple fill-publicnext-lightpurple stroke-publicnext-purple" />
             <img 
               src="/logo.png" 
               alt="ElectReps Logo" 
