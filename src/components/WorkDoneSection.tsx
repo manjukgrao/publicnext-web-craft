@@ -35,12 +35,6 @@ const WorkDoneSection = () => {
         description: "Gia Life Sciences is a pioneering medical device manufacturer with a strong focus on advanced healthcare technology. PublicNext developed their corporate website to reflect their innovation, industry leadership, and product portfolio.",
         icon: <Laptop className="h-10 w-10 text-publicnext-purple" />,
         tech: "WordPress"
-      },
-      {
-        title: "Video Transcoding – Scalable Media Delivery",
-        description: "ElectReps Pvt Ltd has built a robust video transcoding infrastructure to support high-performance media platforms like PublicNext and other client projects. Our system ensures seamless video playback, optimized storage, and cost-effective delivery across devices and networks.",
-        icon: <Film className="h-10 w-10 text-publicnext-purple" />,
-        tech: "Cloud Infrastructure"
       }
     ],
     enterprise: [
@@ -55,6 +49,12 @@ const WorkDoneSection = () => {
         description: "For Yastel Networks, we developed a geolocation-based attendance system with selfie verification that ensures employees are physically present at assigned field sites, eliminating manual reporting and false attendance issues.",
         icon: <Database className="h-10 w-10 text-publicnext-purple" />,
         tech: "Enterprise Software"
+      },
+      {
+        title: "Video Transcoding – Scalable Media Delivery",
+        description: "ElectReps Pvt Ltd has built a robust video transcoding infrastructure to support high-performance media platforms like PublicNext and other client projects. Our system ensures seamless video playback, optimized storage, and cost-effective delivery across devices and networks.",
+        icon: <Film className="h-10 w-10 text-publicnext-purple" />,
+        tech: "Cloud Infrastructure"
       }
     ]
   };

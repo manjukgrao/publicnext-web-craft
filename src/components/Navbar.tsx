@@ -57,6 +57,9 @@ const Navbar = () => {
           <a href="#services" className="text-publicnext-blue hover:text-publicnext-purple transition-colors font-medium">
             Services
           </a>
+          <a href="#featured" className="text-publicnext-blue hover:text-publicnext-purple transition-colors font-medium">
+            Featured In
+          </a>
           <a href="#work" className="text-publicnext-blue hover:text-publicnext-purple transition-colors font-medium">
             Work
           </a>
@@ -105,6 +108,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Services
+            </a>
+            <a 
+              href="#featured" 
+              className="text-publicnext-blue hover:text-publicnext-purple transition-colors px-4 py-2"
+              onClick={toggleMenu}
+            >
+              Featured In
             </a>
             <a 
               href="#work" 

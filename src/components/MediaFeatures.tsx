@@ -23,7 +23,7 @@ const MediaFeatures = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="featured" className="py-16 bg-gray-50">
       <div className="container">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">Featured In</h2>
