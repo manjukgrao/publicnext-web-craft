@@ -46,9 +46,15 @@ const Hero = () => {
             <div className="flex justify-center">
               <div className="px-8 py-3 bg-white shadow-md rounded-lg">
                 <img 
-                  src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" 
+                  src="/assets/images/google-logo.png" 
                   alt="Google" 
                   className="h-8"
+                  onError={(e) => {
+                    // @ts-ignore - currentTarget is valid
+                    e.currentTarget.onerror = null;
+                    // @ts-ignore - currentTarget is valid
+                    e.currentTarget.src = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png';
+                  }}
                 />
               </div>
             </div>

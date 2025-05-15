@@ -35,7 +35,7 @@ const Navbar = () => {
           <a href="#" className="text-2xl font-bold text-publicnext-blue flex items-center">
             <Circle className="h-8 w-8 mr-2 text-publicnext-purple fill-publicnext-lightpurple stroke-publicnext-purple" />
             <img 
-              src="/logo.png" 
+              src="/assets/images/logo.png" 
               alt="ElectReps Logo" 
               className="h-8 mr-2"
               onError={(e) => {

@@ -6,19 +6,23 @@ const MediaFeatures = () => {
   const mediaOutlets = [
     {
       name: "YourStory",
-      logo: "https://via.placeholder.com/150x60?text=YourStory"
+      logo: "/assets/images/yourstory-logo.png",
+      fallback: "https://via.placeholder.com/150x60?text=YourStory"
     },
     {
       name: "Business Standard",
-      logo: "https://via.placeholder.com/150x60?text=Business+Standard"
+      logo: "/assets/images/business-standard-logo.png",
+      fallback: "https://via.placeholder.com/150x60?text=Business+Standard"
     },
     {
       name: "ANI",
-      logo: "https://via.placeholder.com/150x60?text=ANI"
+      logo: "/assets/images/ani-logo.png",
+      fallback: "https://via.placeholder.com/150x60?text=ANI"
     },
     {
       name: "The Times of India",
-      logo: "https://via.placeholder.com/150x60?text=Times+of+India"
+      logo: "/assets/images/times-of-india-logo.png",
+      fallback: "https://via.placeholder.com/150x60?text=Times+of+India"
     }
   ];
 
@@ -38,6 +42,12 @@ const MediaFeatures = () => {
                   src={media.logo} 
                   alt={`${media.name} Logo`} 
                   className="max-h-full max-w-full object-contain"
+                  onError={(e) => {
+                    // @ts-ignore - currentTarget is valid
+                    e.currentTarget.onerror = null;
+                    // @ts-ignore - currentTarget is valid
+                    e.currentTarget.src = media.fallback;
+                  }}
                 />
               </CardContent>
             </Card>
