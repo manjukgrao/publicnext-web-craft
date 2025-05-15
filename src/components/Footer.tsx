@@ -15,21 +15,7 @@ const Footer = () => {
               A leading technology platform specializing in web and app development, cloud solutions, 
               and high-performance enterprise software.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-publicnext-purple transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-publicnext-purple transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-publicnext-purple transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-publicnext-purple transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+           </div>
           
           <div>
             <h3 className="text-xl font-bold mb-4">Services</h3>
@@ -47,8 +33,6 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li><a href="#about" className="hover:text-publicnext-purple transition-colors">About Us</a></li>
               <li><a href="#team" className="hover:text-publicnext-purple transition-colors">Our Team</a></li>
-              <li><a href="#" className="hover:text-publicnext-purple transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-publicnext-purple transition-colors">Blog</a></li>
               <li><a href="#footer" className="hover:text-publicnext-purple transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -58,11 +42,11 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-publicnext-purple" />
-                <span>info@electreps.com</span>
+                <span>help@electreps.com</span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-publicnext-purple" />
-                <span>+91 12345 67890</span>
+                <span>+91 99019 84062</span>
               </li>
             </ul>
           </div>
