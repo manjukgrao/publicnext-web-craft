@@ -12,6 +12,15 @@ This directory contains all the logos and images used throughout the ElectReps w
 - `ani-logo.png` - ANI media outlet logo
 - `times-of-india-logo.png` - Times of India media outlet logo
 
+## Team Member Images
+
+These images should be placed in the `/assets/images/team/` directory:
+
+- `manjunath.jpg` - Manjunath Rao (CEO & Co-Founder)
+- `vishal.jpg` - Vishal Sheth (CTO & Co-Founder)
+- `raghavendra.jpg` - Raghavendra K G (COO & Co-Founder)
+- `prakash.jpg` - Prakash B T (Solution Architect)
+
 ## How to Replace Images
 
 To replace any image:
