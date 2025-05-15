@@ -33,7 +33,6 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="text-2xl font-bold text-publicnext-blue flex items-center">
-            <Circle className="h-8 w-8 mr-2 text-publicnext-purple fill-publicnext-lightpurple stroke-publicnext-purple" />
             <img 
               src="/assets/images/logo.png" 
               alt="ElectReps Logo" 
