@@ -32,8 +32,17 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold text-publicnext-blue">
-            PublicNext
+          <a href="#" className="text-2xl font-bold text-publicnext-blue flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="ElectReps Logo" 
+              className="h-8 mr-2"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = 'https://via.placeholder.com/120x40?text=ElectReps';
+              }} 
+            />
+            ElectReps
           </a>
         </div>
 
@@ -51,7 +60,12 @@ const Navbar = () => {
           <a href="#work" className="text-publicnext-blue hover:text-publicnext-purple transition-colors font-medium">
             Work
           </a>
-          <Button className="bg-publicnext-purple hover:bg-publicnext-lightpurple text-white">
+          <Button 
+            className="bg-publicnext-purple hover:bg-publicnext-lightpurple text-white"
+            onClick={() => {
+              document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Contact Us
           </Button>
         </nav>
@@ -100,7 +114,13 @@ const Navbar = () => {
               Work
             </a>
             <div className="px-4 pt-2">
-              <Button className="w-full bg-publicnext-purple hover:bg-publicnext-lightpurple text-white">
+              <Button 
+                className="w-full bg-publicnext-purple hover:bg-publicnext-lightpurple text-white"
+                onClick={() => {
+                  document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+                  toggleMenu();
+                }}
+              >
                 Contact Us
               </Button>
             </div>

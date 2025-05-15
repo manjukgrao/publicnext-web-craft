@@ -16,15 +16,26 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            PublicNext is a leading technology platform specializing in web and app development, 
+            ElectReps is a leading technology platform specializing in web and app development, 
             cloud solutions, and high-performance enterprise software.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-publicnext-blue hover:bg-publicnext-darkblue text-white px-8 py-6 text-lg">
+            <Button 
+              className="bg-publicnext-blue hover:bg-publicnext-darkblue text-white px-8 py-6 text-lg"
+              onClick={() => {
+                document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Our Services
             </Button>
-            <Button variant="outline" className="border-publicnext-blue text-publicnext-blue hover:bg-publicnext-blue hover:text-white px-8 py-6 text-lg group">
+            <Button 
+              variant="outline" 
+              className="border-publicnext-blue text-publicnext-blue hover:bg-publicnext-blue hover:text-white px-8 py-6 text-lg group"
+              onClick={() => {
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <span>Learn More</span>
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
