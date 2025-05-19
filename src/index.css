@@ -120,5 +120,30 @@
   .animate-pulse {
     animation: soft-pulse 3s ease-in-out infinite;
   }
+  
+  /* Light pass animation for the hero section */
+  .light-pass-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .light-pass {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 250%;
+    height: 250%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(45deg);
+    animation: light-pass 5s ease-in-out infinite;
+  }
+  
+  @keyframes light-pass {
+    0% {
+      transform: rotate(45deg) translateX(-50%) translateY(0%);
+    }
+    100% {
+      transform: rotate(45deg) translateX(100%) translateY(100%);
+    }
+  }
 }
-
