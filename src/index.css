@@ -104,4 +104,21 @@
   .bg-300 {
     background-size: 300% 300%;
   }
+  
+  /* Define animation for the Google logo */
+  @keyframes soft-pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+  }
+  
+  .animate-pulse {
+    animation: soft-pulse 3s ease-in-out infinite;
+  }
 }
+

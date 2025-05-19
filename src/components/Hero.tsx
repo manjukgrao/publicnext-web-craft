@@ -1,17 +1,24 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    setIsLoaded(true);
+  }, []);
+
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
-      {/* Banner image with overlay */}
+      {/* Banner image with overlay and animation */}
       <div className="absolute inset-0 -z-10">
         <img 
           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80" 
           alt="Digital Technology Banner"
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover transition-transform duration-1000 ease-out ${isLoaded ? 'scale-100' : 'scale-110'}`}
           onError={(e) => {
             // @ts-ignore - currentTarget is valid
             e.currentTarget.onerror = null;
@@ -19,11 +26,11 @@ const Hero = () => {
             e.currentTarget.src = 'https://via.placeholder.com/1920x1080?text=ElectReps';
           }}
         />
-        <div className="absolute inset-0 bg-publicnext-darkblue/60"></div>
+        <div className={`absolute inset-0 bg-publicnext-darkblue/60 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}></div>
       </div>
       
       <div className="container relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className={`max-w-3xl mx-auto text-center transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
             Building <span className="gradient-text">Digital Experiences</span> That Transform Businesses
           </h1>
@@ -44,7 +51,7 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-publicnext-blue text-white hover:bg-publicnext-blue hover:text-white px-8 py-6 text-lg group"
+              className="border-publicnext-blue text-white hover:bg-publicnext-blue/20 hover:text-white px-8 py-6 text-lg group"
               onClick={() => {
                 document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
               }}
@@ -54,10 +61,10 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="mt-12">
+          <div className={`mt-12 transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <p className="text-sm text-gray-200 mb-4">Backed By</p>
             <div className="flex justify-center">
-              <div className="px-8 py-3 bg-white/90 shadow-md rounded-lg">
+              <div className="px-8 py-3 bg-white/90 shadow-md rounded-lg animate-pulse">
                 <img 
                   src="/assets/images/google-logo.png" 
                   alt="Google" 
